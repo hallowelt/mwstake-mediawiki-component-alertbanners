@@ -69,8 +69,8 @@ class AddAlerts {
 	}
 
 	protected function collectAlerts() {
-		$mwsRunJobsTriggerConfig = new GlobalVarConfig( 'mwsgAlertBanners' );
-		$providerFactories = $mwsRunJobsTriggerConfig->get( 'ProviderFactories' );
+		$mwsAlertBanners = new GlobalVarConfig( 'mwsgAlertBanners' );
+		$providerFactories = $mwsAlertBanners->get( 'ProviderFactories' );
 
 		/** @var IAlertProvider[] */
 		$providers = [];
