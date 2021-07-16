@@ -11,7 +11,7 @@
 	 * @returns jQuery The actual alert wrapper element
 	 */
 	function _add( id, $elem, type ) {
-		type = type || bs.alerts.TYPE_WARNING;
+		type = type || mwstake.alerts.TYPE_WARNING;
 
 		if( _alerts[id] ) {
 			var $oldAlert = _alerts[id];

@@ -20,7 +20,7 @@ $GLOBALS['mwsgAlertBannersProviderFactories'] = [
 ];
 
 $GLOBALS['wgHooks']['SiteNoticeAfter'][] =
-	'MWStake\MediaWiki\Component\AlertBanners\Hook\SiteNoticeAfter\\AddAlerts::callback';
+	'MWStake\\MediaWiki\\Component\\AlertBanners\\Hook\\SiteNoticeAfter\\AddAlerts::callback';
 
 $GLOBALS['wgResourceModules']['mwstake.component.alertbanners'] = [
 	'scripts' => [
