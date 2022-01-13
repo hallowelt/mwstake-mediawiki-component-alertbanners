@@ -7,7 +7,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_ALERTBANNERS_VERSION' ) ) {
 define( 'MWSTAKE_MEDIAWIKI_COMPONENT_ALERTBANNERS_VERSION', '1.0.0' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
-->register( 'notifications', function() {
+->register( 'alertbanners', function() {
 	$GLOBALS['mwsgAlertBannersProviderRegistry'] = [];
 
 	$GLOBALS['mwsgAlertBannersProviderFactories'] = [
