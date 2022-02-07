@@ -9,6 +9,12 @@ Provides an API for showing banners above the content of a page
 
 Add `"mwstake/mediawiki-component-alertbanners": "~1.0"` to the `require` section of your `composer.json` file.
 
+Since 2.0 explicit initialization is required. This can be archived by
+- either adding `"callback": "mwsInitComponents"` to your `extension.json`/`skin.json`
+- or calling `mwsInitComponents();` within you extensions/skins custom `callback` method
+
+See also `[mwstake/mediawiki-componentloader](https://github.com/hallowelt/mwstake-mediawiki-componentloader)`.
+
 ### Implement a provider
 
 Create a class that implements `MWStake\MediaWiki\Component\AlertBanners\IHandler`. For convenience you may want to derive directly from the abstract base class `MWStake\MediaWiki\Component\AlertBanners\AlertProviderBase`
