@@ -14,7 +14,7 @@ class AddAlerts {
 
 	/**
 	 *
-	 * @param string $siteNotice
+	 * @param string &$siteNotice
 	 * @param Skin $skin
 	 * @return bool
 	 */
@@ -38,7 +38,7 @@ class AddAlerts {
 
 	/**
 	 *
-	 * @param string $siteNotice
+	 * @param string &$siteNotice
 	 * @param Skin $skin
 	 * @param ObjectFactory $objectFactory
 	 */

@@ -4,11 +4,10 @@ namespace MWStake\MediaWiki\Component\AlertBanners;
 
 interface IAlertProvider {
 
-	// Keep in sync with `bs.alerts` constants
-	const TYPE_SUCCESS = 'success';
-	const TYPE_INFO = 'info';
-	const TYPE_WARNING = 'warning';
-	const TYPE_DANGER = 'danger';
+	public const TYPE_SUCCESS = 'success';
+	public const TYPE_INFO = 'info';
+	public const TYPE_WARNING = 'warning';
+	public const TYPE_DANGER = 'danger';
 
 	/**
 	 * @return string
