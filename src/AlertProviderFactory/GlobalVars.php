@@ -20,7 +20,7 @@ class GlobalVars extends Base {
 	public function __construct( $objectFactory, $config = null ) {
 		$this->config = $config;
 		if ( $config === null ) {
-			$this->config = new GlobalVarConfig( 'mwsgRunJobsTrigger' );
+			$this->config = new GlobalVarConfig( 'mwsgAlertBanners' );
 		}
 	}
 
@@ -28,7 +28,7 @@ class GlobalVars extends Base {
 	 * @inheritDoc
 	 */
 	public function processProviders( $providers ) {
-		$handlerSpecs = $this->config->get( 'HandlerRegistry' );
+		$handlerSpecs = $this->config->get( 'ProviderRegistry' );
 		foreach ( $handlerSpecs as $handlerId => $handlerSpec ) {
 			$providers[$handlerId] = $this->objectFactory->createObject( $handlerSpec );
 		}

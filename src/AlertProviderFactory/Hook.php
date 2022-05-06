@@ -4,7 +4,7 @@ namespace MWStake\MediaWiki\Component\AlertBanners\AlertProviderFactory;
 
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\MediaWikiServices;
-use MWStake\MediaWiki\Component\RunJobsTrigger\ObjectFactory;
+use MWStake\MediaWiki\Component\AlertBanners\ObjectFactory;
 
 class Hook extends Base {
 
