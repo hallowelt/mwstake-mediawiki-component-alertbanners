@@ -4,6 +4,7 @@ namespace MWStake\MediaWiki\Component\AlertBanners;
 
 use Config;
 use MediaWiki\MediaWikiServices;
+use RequestContext;
 use Skin;
 use User;
 use Wikimedia\Rdbms\IDatabase;
@@ -43,14 +44,18 @@ abstract class AlertProviderBase implements IAlertProvider {
 
 	/**
 	 *
-	 * @param Skin $skin
+	 * @param Skin|null $skin
 	 * @return IAlertProvider
 	 */
-	public static function factory( $skin ) {
+	public static function factory( $skin = null ) {
 		$services = MediaWikiServices::getInstance();
 
 		$loadBalancer = $services->getDBLoadBalancer();
-		$config = $services->getConfigFactory()->makeConfig( 'bsg' );
+		$config = $services->getMainConfig();
+
+		if ( $skin === null ) {
+			$skin = RequestContext::getMain()->getSkin();
+		}
 
 		$instance = new static( $skin, $loadBalancer, $config );
 
