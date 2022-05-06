@@ -56,8 +56,10 @@ class AddAlerts {
 		return $this->doProcess();
 	}
 
+	/** @var string */
 	protected $container = '';
 
+	/** @var array */
 	protected $alerts = [];
 
 	protected function doProcess() {

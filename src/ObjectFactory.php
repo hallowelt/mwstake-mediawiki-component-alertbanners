@@ -11,7 +11,7 @@ class ObjectFactory {
 	 * See `Wikimedia/ObjectFactory::getObjectFromSpec` for details
 	 *
 	 * @param array $spec
-	 * @return object
+	 * @return stdClass
 	 * @throws InvalidArgumentException
 	 * @throws UnexpectedValueException
 	 */
