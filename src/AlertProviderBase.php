@@ -3,6 +3,7 @@
 namespace MWStake\MediaWiki\Component\AlertBanners;
 
 use Config;
+use ConfigException;
 use MediaWiki\MediaWikiServices;
 use RequestContext;
 use Skin;
@@ -51,7 +52,19 @@ abstract class AlertProviderBase implements IAlertProvider {
 		$services = MediaWikiServices::getInstance();
 
 		$loadBalancer = $services->getDBLoadBalancer();
-		$config = $services->getMainConfig();
+
+		try {
+			// This component has been extracted from `Extension:BlueSpiceFoundation`.
+			// Unfortunately, many implementations of `IAlertProvider` in the BlueSpice
+			// environment currently rely on the `bsg` config, rather than on `MainConfig`.
+			// This b/c code can be removed completely once
+			// https://gerrit.wikimedia.org/r/c/mediawiki/extensions/BlueSpiceFoundation/+/790268
+			// is merged _and_ published!
+			$config = $services->getConfigFactory()->makeConfig( 'bsg' );
+		}
+		catch ( ConfigException $ex ) {
+			$config = $services->getMainConfig();
+		}
 
 		if ( $skin === null ) {
 			$skin = RequestContext::getMain()->getSkin();
