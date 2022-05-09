@@ -17,7 +17,7 @@ See also [`mwstake/mediawiki-componentloader`](https://github.com/hallowelt/mwst
 
 ### Implement a provider
 
-Create a class that implements `MWStake\MediaWiki\Component\AlertBanners\IHandler`. For convenience you may want to derive directly from the abstract base class `MWStake\MediaWiki\Component\AlertBanners\AlertProviderBase`
+Create a class that implements `MWStake\MediaWiki\Component\AlertBanners\IAlertProvider`. For convenience you may want to derive directly from the abstract base class `MWStake\MediaWiki\Component\AlertBanners\AlertProviderBase`
 
 ### Register a provider
 
