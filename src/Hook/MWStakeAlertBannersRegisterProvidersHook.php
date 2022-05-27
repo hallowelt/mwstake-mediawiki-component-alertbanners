@@ -1,6 +1,6 @@
 <?php
 
-namespace MWStake\MediaWiki\Component\AlertBanners\Hook\SiteNoticeAfter;
+namespace MWStake\MediaWiki\Component\AlertBanners\Hook;
 
 interface MWStakeAlertBannersRegisterProvidersHook {
 
