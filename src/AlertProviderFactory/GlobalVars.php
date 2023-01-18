@@ -4,7 +4,7 @@ namespace MWStake\MediaWiki\Component\AlertBanners\AlertProviderFactory;
 
 use Config;
 use GlobalVarConfig;
-use Wikimedia\ObjectFactory;
+use Wikimedia\ObjectFactory\ObjectFactory;
 
 class GlobalVars extends Base {
 

@@ -8,7 +8,7 @@ use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\AlertBanners\IAlertProvider;
 use MWStake\MediaWiki\Component\AlertBanners\IAlertProviderFactory;
 use Skin;
-use Wikimedia\ObjectFactory;
+use Wikimedia\ObjectFactory\ObjectFactory;
 
 class AddAlerts {
 

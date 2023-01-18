@@ -5,7 +5,7 @@ namespace MWStake\MediaWiki\Component\AlertBanners\AlertProviderFactory;
 use Exception;
 use MWStake\MediaWiki\Component\AlertBanners\IAlertProvider;
 use MWStake\MediaWiki\Component\AlertBanners\IAlertProviderFactory;
-use Wikimedia\ObjectFactory;
+use Wikimedia\ObjectFactory\ObjectFactory;
 
 abstract class Base implements IAlertProviderFactory {
 

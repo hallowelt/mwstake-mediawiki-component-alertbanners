@@ -3,7 +3,7 @@
 namespace MWStake\MediaWiki\Component\AlertBanners;
 
 use MediaWiki\MediaWikiServices;
-use Wikimedia\ObjectFactory as WikimediaObjectFactory;
+use Wikimedia\ObjectFactory\ObjectFactory as WikimediaObjectFactory;
 
 class ObjectFactory {
 
