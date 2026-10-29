@@ -5,9 +5,9 @@ namespace MWStake\MediaWiki\Component\AlertBanners\Hook\SiteNoticeAfter;
 use MediaWiki\Config\GlobalVarConfig;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Skin\Skin;
 use MWStake\MediaWiki\Component\AlertBanners\IAlertProvider;
 use MWStake\MediaWiki\Component\AlertBanners\IAlertProviderFactory;
-use Skin;
 use Wikimedia\ObjectFactory\ObjectFactory;
 
 class AddAlerts {

@@ -6,8 +6,8 @@ use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigException;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Skin\Skin;
 use MediaWiki\User\User;
-use Skin;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\LoadBalancer;
 
