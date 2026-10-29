@@ -6,6 +6,7 @@ Provides an API for showing banners above the content of a page
 **This code is meant to be executed within the MediaWiki application context. No standalone usage is intended.**
 
 ## Compatibility
+- \>= `4.0.x` -> MediaWiki 1.47
 - `3.0.x` -> MediaWiki 1.43
 - `2.0.x` -> MediaWiki 1.39
 - `2.0.x` -> MediaWiki 1.35
@@ -17,7 +18,7 @@ Require this component in the `composer.json` of your extension:
 ```json
 {
 	"require": {
-		"mwstake/mediawiki-component-alertbanners": "~3"
+		"mwstake/mediawiki-component-alertbanners": "~4"
 	}
 }
 ```
